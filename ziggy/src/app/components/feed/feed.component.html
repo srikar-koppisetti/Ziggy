@@ -1,3 +1,9 @@
-<p>
-  feed works!
-</p>
+<!-- <div class="chatMessageWrapper" *ngFor="let msg of allMessages" >
+  <p>{{msg.message}}</p>
+</div> -->
+
+<div class="feed">
+  <div class="message" *ngFor="let msg of allMessages">
+    <app-message [chatMessage]=msg></app-message>
+  </div>
+</div>
