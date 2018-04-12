@@ -36,12 +36,11 @@ export class ChatService {
     this.chatMessages = this.getMessages();
     this.chatMessages.push({
       message: msg,
-      timeSet: time,
+      timeSent: time,
       // userName: this.userName,
-      userName: 'test-user',
+      username: 'test-user',
       email: email
     });
-    console.log(this.chatMessages);
   }
 
   //get all messages

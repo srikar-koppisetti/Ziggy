@@ -31,9 +31,10 @@ export class FeedComponent implements OnInit {
       item.forEach(element =>{
         var y = element.payload.toJSON();
         y["$key"]=element.key;
-        this.allMessages.push(y as ChatMessage);
+        this.allMessages.push(y);
       })
     });
+    
   }
 
 }
